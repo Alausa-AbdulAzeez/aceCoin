@@ -259,15 +259,21 @@ width: 100%;
 .form-body form .btn-submit {
   background-color: #035fff;
   width: 100%;
-  padding: 1.2em 0;
-  margin-top: 0.75em;
+  padding: 18px;
+  margin-top: 16px;
   box-sizing: border-box;
   color: #fff;
   text-transform: capitalize;
-  font-size: 1.2em;
+  font-size: 14px;
   font-weight: 500;
   border-radius: 0.6em;
   transition: all 250ms ease-in-out;
+  border: none;
+
+  &:focus{
+    border: none;
+    outline: none;
+  }
 }
 .form-body form .btn-submit:hover {
   background-color: #1254d6;

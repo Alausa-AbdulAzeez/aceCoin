@@ -126,21 +126,19 @@ const Homepage = () => {
                   </div>
                 </div>
               </div>
-              <div className="input-group __col" />
-              <div className="header">
-                <div className="description">
-                  <h2 className="title">password</h2>
-                  <p className="desc">Enter your Dynamic password</p>
+              <div className="input-group __col">
+                <div className="header">
+                  <div className="description">
+                    <h2 className="title">password</h2>
+                    <p className="desc">Enter your Dynamic password</p>
+                  </div>
+                </div>
+                <div className="main">
+                  <input type="password" placeholder="******" />
+                  <img src={dots} alt="dots" className="trailing-icon" />
                 </div>
               </div>
-              <div className="main">
-                <input type="password" placeholder="******" />
-                <img src={dots} alt="dots" className="trailing-icon" />
-              </div>
-
-              <button type="submit" className="btn-submit">
-                pay now
-              </button>
+              <button className="btn-submit">pay now</button>
             </form>
           </section>
         </div>
