@@ -29,7 +29,7 @@ const OrderDetails = () => {
         </div>
         <div className='credit-card__footer'>
           <span className='expiry'>09/22</span>
-          <img src={masterCard} alt='' className='logo' />
+          <img src={masterCard} alt='masterCard' className='logo' />
         </div>
         <div className='card__design'>
           <span className='inner'></span>
