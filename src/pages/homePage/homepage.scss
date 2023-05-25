@@ -154,8 +154,6 @@ body {
             }
 
             img.leading-icon {
-              left: 0;
-
               top: 50%;
               transform: translate(0, -50%);
               left: 20px;
@@ -347,9 +345,32 @@ body {
                 }
               }
             }
+            .main {
+              img {
+              }
+              img.leading-icon {
+                left: 5px;
+                height: 20px;
+              }
+              img.trailing-icon {
+                right: 5px;
+                height: 15px;
+              }
+              input {
+                font-size: 10px;
+                padding-left: 40px;
+              }
+            }
+          }
+          .btn-submit {
+            padding: 10px;
           }
         }
       }
     }
+  }
+
+  .right {
+    width: 100%;
   }
 }
