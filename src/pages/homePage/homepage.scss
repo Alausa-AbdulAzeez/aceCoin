@@ -282,11 +282,12 @@ body {
   width: 260px;
 }
 
-@media screen and (min-width: 280px) {
+@media (min-width: 280px) and (max-width: 1024px) {
   .wrapper {
     flex-direction: column;
     min-width: 250px;
     width: 90%;
+    max-width: 500px;
     overflow-x: auto;
     padding: 14px;
   }
@@ -371,6 +372,7 @@ body {
   }
 
   .right {
+    margin-top: 50px;
     width: 100%;
   }
 }

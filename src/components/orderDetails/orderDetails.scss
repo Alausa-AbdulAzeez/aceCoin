@@ -9,6 +9,7 @@
   .credit-card {
     width: 200px;
     height: 50%;
+    min-height: 100px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), $white_bg);
     backdrop-filter: blur(15px);
     padding: 32px;
@@ -19,6 +20,7 @@
     left: 50%;
     transform: translate(-50%, 0);
     overflow: hidden;
+    max-height: 260px;
 
     .credit-card__head {
       position: relative;
@@ -55,7 +57,6 @@
       }
       .card-digits {
         display: flex;
-        margin-bottom: 8px;
         margin-bottom: 8px;
 
         .hidden-digits {
@@ -122,14 +123,17 @@
   .checkout-details {
     background-color: $checkout_bg;
     height: 88%;
+    min-height: 300px;
     width: 100%;
+    max-width: 350px;
     border-radius: 16px;
     position: absolute;
     top: 68px;
+    max-height: 500px;
+    overflow-y: auto;
 
     .purchase-data {
       position: relative;
-      top: 200px;
       top: 200px;
       padding: 16px 32px;
 
@@ -267,4 +271,59 @@
   top: -7px;
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+@media (min-width: 280px) and (max-width: 1024px) {
+  .checkout {
+    .credit-card {
+      width: 150px;
+      padding: 16px;
+      height: 170px;
+
+      .credit-card__head {
+        margin-bottom: 25px;
+
+        img {
+          height: 20px;
+        }
+        .chip {
+          height: 30px;
+        }
+      }
+      .credit-card__body {
+        .holder {
+          margin-bottom: 4px;
+          font-size: 10px;
+        }
+        .card-digits {
+          margin-bottom: 4px;
+
+          .hidden-digits {
+            margin-right: 5px;
+            .circle {
+            }
+          }
+          .visible-digits {
+            font-size: 10px;
+          }
+        }
+      }
+      .credit-card__footer {
+        top: 25px;
+      }
+    }
+
+    .checkout-details {
+      top: 100px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      .purchase-data {
+        top: 70px;
+
+        .data {
+          font-size: 8px;
+        }
+      }
+    }
+  }
 }
