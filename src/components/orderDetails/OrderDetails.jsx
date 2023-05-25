@@ -4,6 +4,7 @@ import chip from '../../assets/chip.png'
 import wifi from '../../assets/wifi.png'
 import masterCard from '../../assets/mastercard-2.svg'
 import docket from '../../assets/docket.png'
+import apple from '../../assets/apple-13.svg'
 
 const OrderDetails = () => {
   return (
@@ -39,7 +40,7 @@ const OrderDetails = () => {
           <div className='data'>
             <span className='title'>company</span>
             <span className='value'>
-              <img src='assets/apple-13.svg' alt='' />
+              <img src={apple} alt='apple' />
               <span className='inner-text'>apple</span>
             </span>
           </div>
