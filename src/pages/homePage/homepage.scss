@@ -18,7 +18,7 @@ body {
   box-shadow: 0px 4px 14px 2px rgba(0, 0, 0, 0.1);
   display: flex;
   height: 85%;
-  //   overflow: auto;
+  overflow-y: auto;
 }
 
 .wrapper .close-btn {
@@ -33,9 +33,12 @@ body {
 }
 
 .left {
-  width: 750px;
+  width: 600px;
+  // background-color: blue;
+  // display: flex;
+  // flex-direction: column;
 
-  flex: 3;
+  // flex: 3;
 }
 
 .form {
@@ -108,7 +111,7 @@ form {
 .form-body form .input-group {
   margin-bottom: 0;
   width: 100%;
-    // background-color: red;
+  // background-color: red;
   //   margin-bottom: 2em;
   //   flex: 1;
 }
@@ -146,7 +149,7 @@ form {
 }
 .form-body form .input-group .header button.edit .pen {
   height: 0.9em;
- color: #035fff;
+  color: #035fff;
   //   fill: #1da1f2;
   font-size: 18px;
   font-weight: bold;
@@ -171,8 +174,8 @@ form {
   top: 50%;
   transform: translate(0, -50%);
   left: 1.2em;
-    width: 34px;
-      height: 34px;
+  width: 34px;
+  height: 34px;
 }
 .form-body form .input-group .main img.trailing-icon {
   width: 20px;
@@ -195,7 +198,7 @@ form {
   color: #05365c;
 }
 
-.form-body form .input-group .main input.inputClass{
+.form-body form .input-group .main input.inputClass {
   width: 100%;
 }
 .form-body form .input-group .main input:focus {
@@ -210,7 +213,7 @@ form {
   align-items: center;
   justify-content: space-between;
   flex-direction: initial;
-    margin-top: 16px;
+  margin-top: 16px;
 }
 .form-body form .input-group.__col .grp {
   display: flex;
@@ -242,7 +245,7 @@ form {
   padding-left: 0;
   text-align: center;
   background: none;
-width: 100%;
+  width: 100%;
 }
 .form-body form .input-group.__col .main input:focus {
   background: rgba(0, 119, 182, 0.05);
@@ -257,7 +260,6 @@ width: 100%;
 }
 .form-body form .input-group.__col .main.__date {
   width: 45%;
-
 }
 .form-body form .btn-submit {
   background-color: #035fff;
@@ -271,11 +273,11 @@ width: 100%;
   font-weight: 500;
   border-radius: 0.6em;
   transition: all 250ms ease-in-out;
-  text-align:center;
+  text-align: center;
   cursor: pointer;
   border: none;
 
-  &:focus{
+  &:focus {
     border: none;
     outline: none;
   }
@@ -286,6 +288,7 @@ width: 100%;
 
 .right {
   flex: 1;
+  width: 260px;
 }
 
 // .checkout {
